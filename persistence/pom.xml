@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <parent>
+    <artifactId>parent</artifactId>
+    <groupId>com.hcybi</groupId>
+    <version>${hcybi.version}</version>
+  </parent>
+  <modelVersion>4.0.0</modelVersion>
+
+  <artifactId>persistence</artifactId>
+  <version>${hcybi.version}</version>
+  <modules>
+    <module>mybatis</module>
+      <module>redis</module>
+  </modules>
+
+  <packaging>pom</packaging>
+  <description>集成持久化框架API, 如mybatis, jpa等</description>
+
+  <dependencies>
+    <dependency>
+      <groupId>com.hcybi</groupId>
+      <artifactId>common</artifactId>
+      <version>${hcybi.version}</version>
+    </dependency>
+  </dependencies>
+
+
+</project>

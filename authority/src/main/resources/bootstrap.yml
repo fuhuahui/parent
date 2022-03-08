@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: hcybi-authority
+  profiles:
+    active: ${spring.profiles.active}
+  cloud:
+    compatibility-verifier:
+      enabled: false
+    nacos:
+      discovery:
+        server-addr: nacoshost:8848
+        namespace: ${spring.profiles.active}
+        username: nacos
+        password: nacosview
+      config:
+        server-addr: nacoshost:8848
+        file-extension: yml
+        namespace: ${spring.profiles.active}
+        username: nacos
+        password: nacosview
+service-url:
+  hcybi-system-provider: http://hcybi-authority
+
+
+
+
